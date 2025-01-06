@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Main Container */
+#app {
+  background-color: #ffffff;
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #0073e6;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+button {
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 80%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+  font-weight: bold;
+}
+
+/* Button Colors */
+#twoStepBtn {
+  background-color: #0073e6; /* Blue */
+}
+
+#twoStepBtn:hover {
+  background-color: #005bb5;
+}
+
+#texasLottoBtn {
+  background-color: #28a745; /* Green */
+}
+
+#texasLottoBtn:hover {
+  background-color: #218838;
+}
+
+#megaMillionsBtn {
+  background-color: #ffc107; /* Yellow */
+}
+
+#megaMillionsBtn:hover {
+  background-color: #e0a800;
+}
+
+#csvInput {
+  display: none;
+}
+
+/* Lottery Screen */
+#lotteryScreen {
+  margin-top: 2rem;
+}
+
+#result {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+#result p strong {
+  font-size: 1.2rem;
+}
+
+#backBtn {
+  background-color: #6c757d;
+}
+
+#backBtn:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  #result {
+    font-size: 0.9rem;
+  }
+}
+
+/* Center buttons within their container */
+#lotteryScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center */
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#authorizeBtn,
+#localFileBtn,
+#backBtn {
+  background-color: #007bff; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  max-width: 300px;
+}
+
+#authorizeBtn:hover,
+#localFileBtn:hover,
+#backBtn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

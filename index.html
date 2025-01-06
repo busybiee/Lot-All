@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lottery Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Lottery Predictor</h1>
+    <p>Select the lottery game you want to analyze:</p>
+    <button id="twoStepBtn">Two Step</button>
+    <button id="texasLottoBtn">Texas Lotto</button>
+    <button id="megaMillionsBtn">Mega Millions</button>
+  </div>
+
+  <div id="lotteryScreen" style="display: none;">
+    <h2 id="gameName"></h2>
+    <p>Choose how to upload your CSV file for prediction:</p>
+    <button id="authorizeBtn">Use Google Drive</button>
+    <button id="localFileBtn">Upload Local File</button>
+    <input type="file" id="csvInput" accept=".csv" style="display: none;" />
+    <div id="result"></div>
+    <button id="backBtn" style="margin-top: 1rem;">Back to Main Menu</button>
+  </div>
+
+  <!-- Google API -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
